@@ -37,13 +37,16 @@ namespace Unlocker
         public void doTask(int minitues)
         {
             int miliseconds = minitues  * 1000;
-            if (timer != null && timer.Enabled)
+            if (timer != null)
             {
-                timer.Stop();
+                if (timer.Enabled)
+                {
+                    timer.Stop();
+                }
+                timer.Interval = miliseconds;
+                timer.Enabled = true;
+                timer.Start();
             }
-            timer.Interval = miliseconds;
-            timer.Enabled = true;
-            timer.Start();
         }
 
         /// <summary>

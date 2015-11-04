@@ -30,7 +30,7 @@ namespace Unlocker
         /// <param name="e"></param>
         private void FormSettings_Load(object sender, EventArgs e)
         {
-            this.comboBoxTime.SelectedIndex = 4;
+            this.comboBoxTime.SelectedIndex = 0;
         }
 
         /// <summary>
