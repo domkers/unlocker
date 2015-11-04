@@ -36,7 +36,7 @@ namespace Unlocker
         /// <param name="minitues">分钟数</param>
         public void doTask(int minitues)
         {
-            int miliseconds = minitues  * 1000;
+            int miliseconds = minitues * 60 * 1000;
             if (timer != null)
             {
                 if (timer.Enabled)
