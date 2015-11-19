@@ -53,9 +53,8 @@ namespace Unlocker
         /// <returns></returns>
         public bool ShakeMouse()
         {
-            Random r = new Random();
-            int x = r.Next(-100, 100);
-            int y = r.Next(-100, 100);
+            int x = 1;
+            int y = 1;
             SetCursorPos(x, y);
             SetCursorPos(-x, -y);
             return true;
